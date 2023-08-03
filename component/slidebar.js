@@ -1,9 +1,9 @@
 'use client'
 import styles from './styles.module.css';
 import Image from 'next/image';
-import Searchpic from '../../public/magnifying-glass-solid (1).svg';
-import Homepic from '../../public/icons8-home-48.png';
-import librarypic from '../../public/icons8-music-library-50.png';
+import Searchpic from '../public/magnifying-glass-solid (1).svg';
+import Homepic from '../public/icons8-home-48.png';
+import librarypic from '../public/icons8-music-library-50.png';
 const redirect = "http://localhost:3000/";
 export default function slidebar({current}) {
   return (

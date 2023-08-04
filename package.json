@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "formik": "^2.4.3",
     "next": "13.4.12",
     "next-auth": "^4.22.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "serverless-mysql": "^1.5.5"
+    "serverless-mysql": "^1.5.5",
+    "yup": "^1.2.0"
   }
 }

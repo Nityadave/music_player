@@ -1,30 +1,19 @@
+// signup.js
 import { useState } from 'react';
-import styles from './styles.module.css';
-import eye_open from '../../public/eye_open.png';
-import eye_close from '../../public/eye_close.png';
+import styles from './Login.module.css';
 import Image from 'next/image';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [passwordConfirmation, setPasswordConfirmation] = useState('');
   const [passwordInputType, setPasswordInputType] = useState('password');
 
   const handleSubmit = async (e) => {
-    // submit form
-    // const query = `select * from login where email = ${email} and password =  ${password}`
-    // const result = executeQuery({query});
-    // if(result){
-    //     alert("Work done");
-    // }
+    // Handle signup form submission
   };
 
-  const isButtonDisabled =
-    !email ||
-    !password ||
-    !confirmPassword ||
-    password !== confirmPassword ||
-    !/\S+@\S+\.\S+/.test(email);
+  const isButtonDisabled = !email || !password || !passwordConfirmation || password !== passwordConfirmation || !/\S+@\S+\.\S+/.test(email);
 
   const togglePasswordVisibility = () => {
     setPasswordInputType(passwordInputType === 'password' ? 'text' : 'password');
@@ -34,8 +23,7 @@ export default function Signup() {
     <div className={styles.container}>
       <div className={styles.background}></div>
       <div className={styles.loginCard}>
-        <h1 className={styles.headline}>Signup</h1>
-        {/* {error && <p>{error}</p>} */}
+        <h1 className={styles.headline}>Sign Up</h1>
         <form onSubmit={handleSubmit}>
           <input
             className={styles.datainput}
@@ -71,17 +59,13 @@ export default function Signup() {
           </div>
           <input
             className={styles.datainput}
-            type={passwordInputType}
+            type="password"
             placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
+            value={passwordConfirmation}
+            onChange={(e) => setPasswordConfirmation(e.target.value)}
           />
-          <button
-            className={styles.button}
-            type="submit"
-            disabled={isButtonDisabled}
-          >
-            Signup
+          <button className={styles.button} type="submit" disabled={isButtonDisabled}>
+            Sign Up
           </button>
         </form>
       </div>

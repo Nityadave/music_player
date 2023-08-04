@@ -7,7 +7,7 @@ import Image from 'next/image';
 // import executeQuery from '@/component/db';
 
 
-export default function Login() {
+export default function Login() { 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordInputType, setPasswordInputType] = useState('password');

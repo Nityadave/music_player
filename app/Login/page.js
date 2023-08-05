@@ -54,16 +54,7 @@ export default function Login() {
               onClick={togglePasswordVisibility}
               className={styles.toggleButton}
             >
-              <Image
-                src={
-                  passwordInputType === 'password'
-                    ?  eye_close
-                    : eye_open
-                }
-                height={30}
-                width={29}
-                alt="toggle"
-              />
+ 
             </button>
           </div>
           <button className={styles.button} type="submit" disabled={isButtonDisabled}>

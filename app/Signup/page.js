@@ -1,8 +1,10 @@
 // signup.js
+'use client'
 import { useState } from 'react';
-import styles from './Login.module.css';
+import styles from './styles.module.css';
 import Image from 'next/image';
-
+import eye_close from '../../public/eye_close.png'
+import eye_open from '../../public/eye_open.png'
 export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -45,16 +47,6 @@ export default function Signup() {
               onClick={togglePasswordVisibility}
               className={styles.toggleButton}
             >
-              <Image
-                src={
-                  passwordInputType === 'password'
-                    ? eye_close
-                    : eye_open
-                }
-                height={30}
-                width={29}
-                alt="toggle"
-              />
             </button>
           </div>
           <input

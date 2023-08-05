@@ -12,7 +12,7 @@ export default function header() {
                 <div className={styles.buttons_container}>
                 <button className={`${styles.button} ${styles.login_button}`} onClick={() => window.location.href=redirect+'Login'}>Login</button>
                 <Image src={slash} alt='' height={45} width={20} />
-                <button className={`${styles.button} ${styles.signup_button}`} onClick={()=> window.location.href= redirect+'signup'}>Sign Up</button>
+                <button className={`${styles.button} ${styles.signup_button}`} onClick={()=> window.location.href= redirect+'Signup'}>Sign Up</button>
                 </div>
             </div>
         </div>

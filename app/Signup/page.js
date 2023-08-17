@@ -15,7 +15,7 @@ export default function Signup() {
     // Handle signup form submission
   };
 
-  const isButtonDisabled = !email || !password || !passwordConfirmation || password !== passwordConfirmation || !/\S+@\S+\.\S+/.test(email);
+  const isButtonDisabled = !email || !(password.length>8) || !passwordConfirmation || password !== passwordConfirmation || !/\S+@\S+\.\S+/.test(email);
 
   const togglePasswordVisibility = () => {
     setPasswordInputType(passwordInputType === 'password' ? 'text' : 'password');
@@ -24,7 +24,7 @@ export default function Signup() {
   return (
     <div className={styles.container}>
       <div className={styles.background}></div>
-      <div className={styles.loginCard}>
+      <div className={styles.signupcard}>
         <h1 className={styles.headline}>Sign Up</h1>
         <form onSubmit={handleSubmit}>
           <input

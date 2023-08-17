@@ -116,3 +116,90 @@
     pointer-events: none; /* Disable pointer events to prevent clicking on the button */
     /* Add any other styles you want for disabled buttons */
   }
+
+  /* component/ContentContainer.module.css */
+.content {
+  position: fixed;
+  top: 95px; /* Adjust top value to add space from the header */
+  left:300px; /* Width of the sidebar */
+  width: calc(83% - 350px);
+  height: calc(77% - 70px); /* Adjust height to account for header */
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(131, 29, 29, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.songdetails{
+  position: fixed;
+  top: 70px; /* Adjust top value to add space from the header */
+  left: 0; /* Position the sidebar on the right side */
+  width: 15%;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Adjust the shadow for right positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+ .bottomContainer{
+  padding: 10px;
+  position: fixed;
+  left: 21.1%;
+  top: 88%;
+  width: 59%; 
+  height: 7% ;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+ }
+
+ /* PlaylistPage.module.css */
+.container {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.playlist {
+  font-size: 24px;
+  margin-right: 20px; /* Add some space between the playlist div and card container */
+}
+
+.cardContainer {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: start; /* Align cards to the left */
+  align-items: center; 
+  gap: 10px;
+  padding: 5px;
+  width: calc(100% - 40px); 
+  cursor: pointer;
+  border: 1px solid #6c6666;
+  border-radius: 10px;
+  margin-top: 57px  ; 
+  
+}
+
+  .card {
+  flex: 0 0 160px; /* Fixed width for each card */
+  height: 170px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  
+  background-image: url('C:/Users/NITYA DAVE/.vscode/music player/music_player/public/card.png'); /* Replace with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  }
+
+  

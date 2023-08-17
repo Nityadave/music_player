@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Slidebar from '../../component/slidebar';
 import Header from '../../component/header';
 import Link from 'next/link';
+import Songdetails from '@/component/songdetails';
+import Playbar from '../../component/playbar';
+import Librarycontent from '@/component/Librarycontent';
 export default function Library() {
     return (
       <main className="Home">
@@ -12,6 +15,9 @@ export default function Library() {
         <title>My Website</title>
         <Header />
        <Slidebar current='Library'/>
+       <Playbar></Playbar>
+      <Songdetails></Songdetails>
+      <Librarycontent></Librarycontent>
       </div>
       </main>
     )

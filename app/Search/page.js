@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Slidebar from '../../component/slidebar';
 import Header from '../../component/header';
 import Link from 'next/link';
+import Searchcontent from '@/component/Searchcontent';
+import Playbar from '@/component/playbar';
+import Songdetails from '@/component/songdetails';
 export default function Search() {
     return (
       <main className="Home">
@@ -12,6 +15,9 @@ export default function Search() {
         <title>My Website</title>
         <Header />
        <Slidebar current='Search'/>
+       <Playbar></Playbar>
+       <Searchcontent></Searchcontent>
+       <Songdetails></Songdetails>
       </div>
       </main>
     )
